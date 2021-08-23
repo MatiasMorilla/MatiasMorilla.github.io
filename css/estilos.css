@@ -44,7 +44,6 @@ a {
   font-size: 22px; }
 
 .header__nav {
-  width: 40vw;
   height: 100%;
   padding: 0px 0.625rem;
   display: flex;
@@ -172,17 +171,14 @@ SOBRE MI
   display: flex;
   flex-direction: column;
   transform: translateX(5%); }
-
-.sobreMi__info h2 {
-  font-size: 60px;
-  font-weight: 100; }
-
-.sobreMi__info h4 {
-  margin: 10px 0;
-  font-size: 18px; }
-
-.sobreMi__info p {
-  width: 70%; }
+  .sobreMi__info h2 {
+    font-size: 60px;
+    font-weight: 100; }
+  .sobreMi__info h4 {
+    margin: 10px 0;
+    font-size: 18px; }
+  .sobreMi__info p {
+    width: 70%; }
 
 .tecnologias {
   padding: 0.625rem;
@@ -193,27 +189,32 @@ SOBRE MI
   padding: 0.625rem;
   display: flex;
   flex-direction: column; }
+  .tecnologias__info p {
+    width: 80%;
+    margin-top: 15px; }
 
-.tecnologias__info p {
-  width: 80%; }
-
-.tecnologias__info .sobreMi__info p {
+.sobreMi__info p {
   margin-top: 15px; }
 
 .tecnologias__lenguajes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
-  gap: 5px;
-  padding: 5px;
-  border: 1px solid #000; }
-
-.tecnologias__lenguajes span {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000; }
+  gap: 20px;
+  padding: 5px; }
+  .tecnologias__lenguajes span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+  .tecnologias__lenguajes .progres-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .tecnologias__lenguajes .progres-container .progress {
+      width: 100%; }
 
 /**************************************************************
 PROYECTOS
