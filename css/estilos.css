@@ -23,13 +23,21 @@ a {
 .header {
   width: 100%;
   height: 3rem;
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.625rem;
-  background: linear-gradient(255deg, #5c80ca, #fff);
-  z-index: 90; }
+  transition: all .2s;
+  z-index: 99; }
+
+.header--fixed {
+  position: fixed;
+  background: #5c80ca;
+  transition: all .8s; }
+  .header--fixed .nav__menu__item a:hover {
+    color: #fff; }
+  .header--fixed .first-letter {
+    color: #080eb9; }
 
 .header__brand {
   padding: 0.9375rem;
@@ -59,7 +67,7 @@ a {
   transition: color .3s ease; }
 
 .nav__menu__item a:hover {
-  color: #ffffff; }
+  color: #5c80ca; }
 
 /**************************************************************
  MAIN
@@ -83,12 +91,12 @@ a {
 .main-container h1 {
   font-size: 45px;
   font-weight: 400;
-  z-index: 99; }
+  z-index: 90; }
 
 .main-container h2 {
   font-size: 25px;
   font-weight: 400;
-  z-index: 99; }
+  z-index: 90; }
 
 /**************************************************************
  FOOTER
