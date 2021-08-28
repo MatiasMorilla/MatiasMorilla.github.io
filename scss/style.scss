@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+@import "_variables";
 
 * {
   padding: 0;
@@ -13,7 +14,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 .first-letter {
-  color: #5c80ca; }
+  color: $color_principal; }
 
 a{
     color:#000;
@@ -34,15 +35,13 @@ a{
 
 .header--fixed{
   position: fixed;
-  background: #5c80ca;
+  background: #fff;
   transition: all .8s;
 
   .nav__menu__item a:hover {
-    color: #fff; }
-
-  .first-letter{
-    color:#080eb9;
+    color: $color_principal; 
   }
+
 }
 
 .header__brand {
@@ -76,7 +75,7 @@ a{
 }
 
 .nav__menu__item a:hover {
-  color: #5c80ca; 
+  color: $color_principal; 
 }
 
 .btn_menu{
@@ -125,7 +124,7 @@ a{
 .footer {
   width: 100%;
   height: 8vh;
-  background: #5c80ca;
+  background: $color_principal;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,7 +379,7 @@ CONTACTO
     left: 0;
     width: 100%;
     height: 1px;
-    background: #5c80ca;
+    background: $color_principal;
     z-index: -1;
 }
 
