@@ -41,8 +41,8 @@ a{
   }
   
   .header__nav {
-    height: 100vh;
     padding: 0px 0.625rem;
+    transform: translateY(26%);
     @include centrarElementos;
   }
 
@@ -242,6 +242,7 @@ SOBRE MI
   
 
 .tecnologias__lenguajes {
+  width: 40%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -279,6 +280,9 @@ PROYECTOS
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
+  grid-template-areas: "proyecto1 img"
+                       "proyecto2 img"
+                       "proyecto3 img";
   gap: 20px; 
 
   .proyectos__item {
@@ -287,21 +291,37 @@ PROYECTOS
     justify-content: space-between;
     background: #ccc;
     padding: 10px; 
+
+    .proyecto1{
+      grid-area: proyecto1;
+    }
+
+    .proyecto2{
+      grid-area: proyecto2;
+    }
+
+    .proyecto3{
+      grid-area: proyecto3;
+    }
   
     .proyectos__item__titulo {
       flex-grow: 1;
-      font-size: 28px; }
+      font-size: 28px; 
+    }
     
     .proyectos__item__subtitulo {
       flex-grow: 2;
-      font-size: 18px; }
+      font-size: 18px; 
+    }
     
     .proyectos__item__info {
       flex-grow: 3;
-      font-size: 16px; }
+      font-size: 16px; 
+    }
   }
   
   .proyectos__img img{
+    grid-area: img;
     width: 34em; 
     height: 100%
   }
@@ -402,3 +422,4 @@ CONTACTO
 
 @import "header-mobile.scss";
 @import "sobremi-mobile.scss";
+@import "proyectos-mobile.scss";

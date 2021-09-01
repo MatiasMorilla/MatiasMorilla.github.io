@@ -1,0 +1,77 @@
+@import "_variables";
+@import "_mixins";
+
+@media screen and (max-width: 1160px){
+    .proyectos {
+        grid-template-columns: 540px;
+        grid-auto-rows: 1fr;
+        grid-template-areas: "proyecto1"
+                             "img1"
+                             "proyecto2"
+                             "img2"
+                             "proyecto3"
+                             "img3";
+
+        .proyecto1{
+            grid-area: proyecto1;
+        }
+        
+        :nth-child(2){
+            grid-area: img1;
+        }
+      
+        .proyecto2{
+            grid-area: proyecto2;
+        }
+
+        :nth-child(3){
+            grid-area: img2;
+        }
+      
+        .proyecto3{
+            grid-area: proyecto3;
+         }
+
+         :nth-child(6){
+            grid-area: img3;
+        }
+      }    
+}
+
+@media screen and (max-width: 740px){
+
+    .section-container .section__titulo{
+        font-size: 60px;
+    }
+
+    .proyectos {
+        grid-template-columns: 320px;
+        grid-auto-rows: 1fr;
+
+        .proyectos__item{
+
+            .proyectos__item__titulo {
+                flex-grow: 1;
+                font-size: 26px; 
+              }
+              
+              .proyectos__item__subtitulo {
+                flex-grow: 2;
+                font-size: 16px; 
+              }
+              
+              .proyectos__item__info {
+                flex-grow: 3;
+                font-size: 14px; 
+              }
+        }
+        
+        .proyectos__img img{
+            grid-area: img;
+            width: 320px; 
+            height: 100%
+          }
+    }
+
+    
+}
