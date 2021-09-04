@@ -3,38 +3,29 @@
 
 @media screen and (max-width: 1160px){
     .proyectos {
+        transform: translateX(-5%);
         grid-template-columns: 540px;
         grid-auto-rows: 1fr;
         grid-template-areas: "proyecto1"
-                             "img1"
                              "proyecto2"
-                             "img2"
-                             "proyecto3"
-                             "img3";
+                             "proyecto3";
+
+
+        img{
+            display: none;
+        }
 
         .proyecto1{
             grid-area: proyecto1;
         }
         
-        :nth-child(2){
-            grid-area: img1;
-        }
-      
         .proyecto2{
             grid-area: proyecto2;
         }
-
-        :nth-child(3){
-            grid-area: img2;
-        }
-      
+     
         .proyecto3{
             grid-area: proyecto3;
          }
-
-         :nth-child(6){
-            grid-area: img3;
-        }
       }    
 }
 
@@ -57,12 +48,12 @@
               
               .proyectos__item__subtitulo {
                 flex-grow: 2;
-                font-size: 16px; 
+                font-size: 18px; 
               }
               
               .proyectos__item__info {
                 flex-grow: 3;
-                font-size: 14px; 
+                font-size: 15px; 
               }
         }
         

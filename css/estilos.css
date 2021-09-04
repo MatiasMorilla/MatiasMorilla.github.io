@@ -140,7 +140,8 @@ a {
 SECTION
 **************************************************************/
 .section-container {
-  padding: 150px 0 50px 0; }
+  padding: 150px 0 50px 0;
+  margin: 100px 0; }
   .section-container .section__titulo {
     text-align: center;
     font-size: 70px;
@@ -284,8 +285,10 @@ CONTACTO
 .contacto {
   width: 70%;
   margin: 1.25rem auto;
+  padding: 30px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background: #f7f5f5; }
 
 .form {
   width: 450px;
@@ -303,7 +306,7 @@ CONTACTO
   height: 35px;
   padding-left: 5px;
   margin: 5px 0 10px 0;
-  background: #eee;
+  background: #fff;
   border: none;
   outline: 0; }
 
@@ -313,10 +316,16 @@ CONTACTO
   font-family: 'Montserrat', sans-serif;
   padding-top: 5px;
   padding-left: 5px;
-  background: #eee;
   border: none;
   outline: 0;
-  resize: none; }
+  resize: none;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #95b2ee; }
+
+.form input {
+  background: none;
+  border-bottom: 2px solid #95b2ee; }
 
 .form .btn {
   position: relative;
@@ -334,7 +343,7 @@ CONTACTO
   left: 0;
   width: 100%;
   height: 1px;
-  background: #5c80ca;
+  background: #95b2ee;
   z-index: -1; }
 
 @media screen and (max-width: 810px) {
@@ -367,61 +376,64 @@ CONTACTO
 
 @media screen and (max-width: 1160px) {
   .main-sobreMi {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .sobreMi {
     width: 100%;
-    padding: 0.625rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
-  .sobreMi__img {
-    width: 90%;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
-    .sobreMi__img img {
-      width: 250px; }
-  .sobreMi__info {
-    width: 100%; }
-    .sobreMi__info p {
-      width: 100%; }
+    .main-sobreMi .sobreMi {
+      width: 100%;
+      padding: 0.625rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .main-sobreMi .sobreMi .sobreMi__img {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main-sobreMi .sobreMi .sobreMi__img img {
+          width: 250px; }
+      .main-sobreMi .sobreMi .sobreMi__info {
+        width: 80%; }
+        .main-sobreMi .sobreMi .sobreMi__info h2 {
+          text-align: center; }
+        .main-sobreMi .sobreMi .sobreMi__info h4 {
+          transform: translateX(15%); }
+        .main-sobreMi .sobreMi .sobreMi__info p {
+          width: 90%;
+          transform: translateX(16%); }
   .tecnologias {
     padding: 0.625rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .tecnologias__info {
-    width: 90%; }
-    .tecnologias__info p {
-      width: 100%; }
-  .tecnologias__lenguajes {
-    width: 90%; }
-    .tecnologias__lenguajes .progres-container {
-      width: 80%;
-      height: 80%;
-      display: flex;
-      align-items: center; } }
+    .tecnologias .tecnologias__info {
+      width: 90%; }
+      .tecnologias .tecnologias__info p {
+        width: 100%; }
+    .tecnologias .tecnologias__lenguajes {
+      width: 90%; }
+      .tecnologias .tecnologias__lenguajes .progres-container {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center; } }
 
 @media screen and (max-width: 1160px) {
   .proyectos {
+    transform: translateX(-5%);
     grid-template-columns: 540px;
     grid-auto-rows: 1fr;
-    grid-template-areas: "proyecto1" "img1" "proyecto2" "img2" "proyecto3" "img3"; }
+    grid-template-areas: "proyecto1" "proyecto2" "proyecto3"; }
+    .proyectos img {
+      display: none; }
     .proyectos .proyecto1 {
       grid-area: proyecto1; }
-    .proyectos :nth-child(2) {
-      grid-area: img1; }
     .proyectos .proyecto2 {
       grid-area: proyecto2; }
-    .proyectos :nth-child(3) {
-      grid-area: img2; }
     .proyectos .proyecto3 {
-      grid-area: proyecto3; }
-    .proyectos :nth-child(6) {
-      grid-area: img3; } }
+      grid-area: proyecto3; } }
 
 @media screen and (max-width: 740px) {
   .section-container .section__titulo {
@@ -434,11 +446,49 @@ CONTACTO
       font-size: 26px; }
     .proyectos .proyectos__item .proyectos__item__subtitulo {
       flex-grow: 2;
-      font-size: 16px; }
+      font-size: 18px; }
     .proyectos .proyectos__item .proyectos__item__info {
       flex-grow: 3;
-      font-size: 14px; }
+      font-size: 15px; }
     .proyectos .proyectos__img img {
       grid-area: img;
       width: 320px;
       height: 100%; } }
+
+@media screen and (max-width: 1160px) {
+  .section-container {
+    height: 160vh; }
+  #section-proyectos {
+    height: 190vh; }
+  #section-servicios {
+    height: 120vh; }
+  #section-contacto {
+    height: 110vh; } }
+
+@media screen and (max-width: 700px) {
+  .section-container {
+    height: 180vh; } }
+
+@media screen and (max-width: 500px) {
+  .section-container {
+    height: 210vh; } }
+
+@media screen and (max-width: 1160px) {
+  .servicios {
+    transform: translateX(-14%);
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px; }
+    .servicios .servicios__item {
+      height: 300px; }
+      .servicios .servicios__item .servicios__item__titulo {
+        font-size: 25px; }
+      .servicios .servicios__item .servicios__item__info {
+        text-align: center;
+        width: 26em; } }
+
+@media screen and (max-width: 700px) {
+  .servicios .servicios__item .servicios__item__titulo {
+    font-size: 23px; }
+  .servicios .servicios__item .servicios__item__info {
+    width: 24em; } }

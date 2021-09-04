@@ -1,0 +1,29 @@
+@media screen and (max-width: 1160px){
+    .section-container{
+        height: 160vh;
+      }
+
+    #section-proyectos{
+        height: 190vh;
+    }
+
+    #section-servicios{
+      height: 120vh;
+    }
+
+    #section-contacto{
+      height: 110vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section-container{
+        height: 180vh;
+      }
+}
+
+@media screen and (max-width: 500px){
+    .section-container{
+        height: 210vh;
+      }
+}
