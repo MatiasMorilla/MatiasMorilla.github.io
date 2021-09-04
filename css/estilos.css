@@ -221,6 +221,9 @@ SOBRE MI
 /**************************************************************
 PROYECTOS
 **************************************************************/
+#section-proyectos {
+  height: 150vh; }
+
 .proyectos {
   width: 70%;
   margin: 1.25rem auto;
@@ -282,13 +285,17 @@ SERVICIOS
 /**************************************************************
 CONTACTO
 **************************************************************/
+#section-contacto {
+  padding: 70px 0px 50px;
+  height: 110vh; }
+
 .contacto {
   width: 70%;
   margin: 1.25rem auto;
   padding: 30px;
   display: flex;
   justify-content: center;
-  background: #f7f5f5; }
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
 
 .form {
   width: 450px;
@@ -304,11 +311,15 @@ CONTACTO
 .form button {
   width: 100%;
   height: 35px;
-  padding-left: 5px;
   margin: 5px 0 10px 0;
   background: #fff;
   border: none;
-  outline: 0; }
+  outline: 0;
+  border-bottom: 2px solid #95b2ee;
+  border-radius: 0; }
+
+.form input {
+  padding: 20px 5px; }
 
 .form textarea {
   width: 100%;
@@ -319,13 +330,8 @@ CONTACTO
   border: none;
   outline: 0;
   resize: none;
-  background: none;
   border-radius: 5px;
   border: 2px solid #95b2ee; }
-
-.form input {
-  background: none;
-  border-bottom: 2px solid #95b2ee; }
 
 .form .btn {
   position: relative;
@@ -474,7 +480,7 @@ CONTACTO
   #section-servicios {
     height: 120vh; }
   #section-contacto {
-    height: 110vh; } }
+    height: 100vh; } }
 
 @media screen and (max-width: 700px) {
   .section-container {
@@ -486,7 +492,7 @@ CONTACTO
 
 @media screen and (max-width: 400px) {
   .section-container {
-    height: 230vh; } }
+    height: 250vh; } }
 
 @media screen and (max-width: 1160px) {
   .servicios {
