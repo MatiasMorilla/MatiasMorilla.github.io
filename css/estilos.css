@@ -353,26 +353,36 @@ CONTACTO
     transition: all .8s; }
     .header .header__nav {
       width: 100%;
-      height: 5vh;
+      height: 100vh;
       background: #fff;
-      position: absolute;
+      position: fixed;
       top: 40px;
-      right: 0;
-      transform: translateX(100%);
+      left: 0;
+      transform: translateX(-100%);
       transition: all .2s;
-      z-index: 90; }
-      .header .header__nav .nav__menu__item a {
-        font-size: 14px; }
-      .header .header__nav .nav__menu__item a:hover {
-        color: #5c80ca; }
+      z-index: 120; }
+      .header .header__nav .nav__menu {
+        height: 50%;
+        justify-content: space-between;
+        flex-direction: column; }
+      .header .header__nav .nav__menu__item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff; }
+        .header .header__nav .nav__menu__item a {
+          font-size: 24px; }
+      .header .header__nav .nav__menu__item:hover {
+        border-bottom: 2px solid #5c80ca;
+        border-top: 2px solid #5c80ca;
+        transition: all .5s; }
+        .header .header__nav .nav__menu__item:hover a {
+          color: #5c80ca;
+          transition: none; }
     .header .header--show {
       transform: translateX(0%); }
     .header .btn_menu {
       display: block; } }
-
-@media screen and (max-width: 520px) {
-  .header .header__nav .nav__menu__item a {
-    font-size: 10px; } }
 
 @media screen and (max-width: 1160px) {
   .main-sobreMi {
@@ -439,6 +449,7 @@ CONTACTO
   .section-container .section__titulo {
     font-size: 60px; }
   .proyectos {
+    transform: translateX(-10%);
     grid-template-columns: 320px;
     grid-auto-rows: 1fr; }
     .proyectos .proyectos__item .proyectos__item__titulo {
@@ -472,6 +483,10 @@ CONTACTO
 @media screen and (max-width: 500px) {
   .section-container {
     height: 210vh; } }
+
+@media screen and (max-width: 400px) {
+  .section-container {
+    height: 230vh; } }
 
 @media screen and (max-width: 1160px) {
   .servicios {

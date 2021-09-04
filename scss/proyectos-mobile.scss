@@ -36,6 +36,7 @@
     }
 
     .proyectos {
+        transform: translateX(-10%);
         grid-template-columns: 320px;
         grid-auto-rows: 1fr;
 
