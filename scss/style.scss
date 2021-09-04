@@ -445,9 +445,10 @@ CONTACTO
     z-index: -1;
 }
 
-@import "header-mobile.scss";
-@import "sobremi-mobile.scss";
-@import "proyectos-mobile.scss";
-@import "section-mobile.scss";
-@import "servicios-mobile.scss";
+@import "mobile/header-mobile.scss";
+@import "mobile/sobremi-mobile.scss";
+@import "mobile/proyectos-mobile.scss";
+@import "mobile/section-mobile.scss";
+@import "mobile/servicios-mobile.scss";
+@import "mobile/contacto-mobile.scss";
 

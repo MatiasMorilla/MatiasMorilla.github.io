@@ -455,7 +455,7 @@ CONTACTO
   .section-container .section__titulo {
     font-size: 60px; }
   .proyectos {
-    transform: translateX(-10%);
+    transform: translateX(-4%);
     grid-template-columns: 320px;
     grid-auto-rows: 1fr; }
     .proyectos .proyectos__item .proyectos__item__titulo {
@@ -490,9 +490,9 @@ CONTACTO
   .section-container {
     height: 210vh; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .section-container {
-    height: 250vh; } }
+    height: 240vh; } }
 
 @media screen and (max-width: 1160px) {
   .servicios {
@@ -513,3 +513,16 @@ CONTACTO
     font-size: 23px; }
   .servicios .servicios__item .servicios__item__info {
     width: 24em; } }
+
+@media screen and (max-width: 450px) {
+  .servicios .servicios__item {
+    width: 90%;
+    padding: 0 10px; }
+    .servicios .servicios__item .servicios__item__titulo {
+      font-size: 20px; }
+    .servicios .servicios__item .servicios__item__info {
+      font-size: 16px; } }
+
+@media screen and (max-width: 450px) {
+  .contacto {
+    width: 90%; } }
