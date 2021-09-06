@@ -53,3 +53,23 @@
       }
     }
 }
+
+@media screen and (max-width: 380px){
+  .servicios {
+    transform: translateX(-17%);
+    grid-template-columns: 360px;
+
+      .servicios__item {
+         width: 90%;
+         padding: 0 10px;
+         
+         .servicios__item__titulo{
+          font-size: 18px;
+        }
+
+        .servicios__item__info{
+          width: 20em;
+        }
+      }
+    }
+}

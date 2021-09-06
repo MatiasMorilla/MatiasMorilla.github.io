@@ -63,7 +63,11 @@
             width: 320px; 
             height: 100%
           }
-    }
+    }   
+}
 
-    
+@media screen and (max-width: 380px){
+    .proyectos {
+        transform: translateX(-15%);
+    }
 }

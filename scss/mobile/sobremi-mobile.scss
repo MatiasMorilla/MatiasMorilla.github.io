@@ -71,3 +71,30 @@
         }
       }     
 }
+
+@media screen and (max-width: 380px){
+  .main-sobreMi {
+
+    .sobreMi {
+      align-items: center;
+
+       .sobreMi__info {
+          width: 100%;
+          transform: translateX(-2%);
+
+          h2{
+            text-align: center;
+          }
+
+          h4{
+            transform: translateX(10%);
+          }
+  
+          p{
+            width: 95%;
+            transform: translateX(11%);
+          }
+      }
+    }
+  }
+}

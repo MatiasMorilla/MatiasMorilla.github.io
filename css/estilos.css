@@ -370,7 +370,8 @@ CONTACTO
       .header .header__nav .nav__menu {
         height: 50%;
         justify-content: space-between;
-        flex-direction: column; }
+        flex-direction: column;
+        padding-left: 0; }
       .header .header__nav .nav__menu__item {
         width: 100%;
         text-align: center;
@@ -436,6 +437,20 @@ CONTACTO
         display: flex;
         align-items: center; } }
 
+@media screen and (max-width: 380px) {
+  .main-sobreMi .sobreMi {
+    align-items: center; }
+    .main-sobreMi .sobreMi .sobreMi__info {
+      width: 100%;
+      transform: translateX(-2%); }
+      .main-sobreMi .sobreMi .sobreMi__info h2 {
+        text-align: center; }
+      .main-sobreMi .sobreMi .sobreMi__info h4 {
+        transform: translateX(10%); }
+      .main-sobreMi .sobreMi .sobreMi__info p {
+        width: 95%;
+        transform: translateX(11%); } }
+
 @media screen and (max-width: 1160px) {
   .proyectos {
     transform: translateX(-5%);
@@ -471,6 +486,10 @@ CONTACTO
       grid-area: img;
       width: 320px;
       height: 100%; } }
+
+@media screen and (max-width: 380px) {
+  .proyectos {
+    transform: translateX(-15%); } }
 
 @media screen and (max-width: 1160px) {
   .section-container {
@@ -522,6 +541,18 @@ CONTACTO
       font-size: 20px; }
     .servicios .servicios__item .servicios__item__info {
       font-size: 16px; } }
+
+@media screen and (max-width: 380px) {
+  .servicios {
+    transform: translateX(-17%);
+    grid-template-columns: 360px; }
+    .servicios .servicios__item {
+      width: 90%;
+      padding: 0 10px; }
+      .servicios .servicios__item .servicios__item__titulo {
+        font-size: 18px; }
+      .servicios .servicios__item .servicios__item__info {
+        width: 20em; } }
 
 @media screen and (max-width: 450px) {
   .contacto {
