@@ -217,6 +217,8 @@ SOBRE MI
     align-items: center; }
     .tecnologias__lenguajes .progres-container .progress {
       width: 100%; }
+      .tecnologias__lenguajes .progres-container .progress .progress-bar {
+        width: 80%; }
 
 /**************************************************************
 PROYECTOS
@@ -255,7 +257,6 @@ PROYECTOS
       font-size: 16px; }
   .proyectos .proyectos__img img {
     grid-area: img;
-    width: 34em;
     height: 100%; }
 
 /**************************************************************
